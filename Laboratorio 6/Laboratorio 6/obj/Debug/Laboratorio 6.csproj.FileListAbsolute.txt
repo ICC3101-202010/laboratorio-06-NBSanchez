@@ -1,0 +1,6 @@
+C:\Users\JENNY\Desktop\laboratorio-06-NBSanchez\Laboratorio 6\Laboratorio 6\bin\Debug\Laboratorio 6.exe.config
+C:\Users\JENNY\Desktop\laboratorio-06-NBSanchez\Laboratorio 6\Laboratorio 6\bin\Debug\Laboratorio 6.exe
+C:\Users\JENNY\Desktop\laboratorio-06-NBSanchez\Laboratorio 6\Laboratorio 6\bin\Debug\Laboratorio 6.pdb
+C:\Users\JENNY\Desktop\laboratorio-06-NBSanchez\Laboratorio 6\Laboratorio 6\obj\Debug\Laboratorio 6.csprojAssemblyReference.cache
+C:\Users\JENNY\Desktop\laboratorio-06-NBSanchez\Laboratorio 6\Laboratorio 6\obj\Debug\Laboratorio 6.exe
+C:\Users\JENNY\Desktop\laboratorio-06-NBSanchez\Laboratorio 6\Laboratorio 6\obj\Debug\Laboratorio 6.pdb
