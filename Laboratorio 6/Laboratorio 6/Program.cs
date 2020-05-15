@@ -16,8 +16,8 @@ namespace Laboratorio_6
             
             Company objcompañia = new Company();
             Random random = new Random();
-            List<String> listName = new List<String>() { "Tony", "Steve", "Natalia", "Bruce", "Peter", "Thor", "Pepper","Wanda","Nick","Carol"};
-            List<String> listLastname = new List<String>() { "Stark", "Rogers", "Romanova", "Banner", "Parker", "Hijo de Odin", "Potts", "Maximoff","Fury","Danvers"};
+            List<String> listName = new List<String>() { "Tony", "Steve", "Natalia", "Bruce", "Peter", "Thor", "Pepper","Wanda","Nick","Carol","Bucky","Gamora","Clint"};
+            List<String> listLastname = new List<String>() { "Stark", "Rogers", "Romanova", "Banner", "Parker", "Hijo de Odin", "Potts", "Maximoff","Fury","Danvers","Barnes","Titan","Barton"};
             
             
 
@@ -40,8 +40,8 @@ namespace Laboratorio_6
                         break;
                     case 2:
                         addCompany();
-                        List<String> RandomName = new List<String>() { listName[random.Next(0, 10)], listName[random.Next(0, 10)], listName[random.Next(0, 10)], listName[random.Next(0, 10)], listName[random.Next(0, 10)], listName[random.Next(0, 10)], listName[random.Next(0, 10)] };
-                        List<String> RandomLastName = new List<String>() { listLastname[random.Next(0, 10)], listLastname[random.Next(0, 10)], listLastname[random.Next(0, 10)], listLastname[random.Next(0, 10)], listLastname[random.Next(0, 10)], listLastname[random.Next(0, 10)], listLastname[random.Next(0, 10)] };
+                        List<String> RandomName = new List<String>() { listName[random.Next(0, 13)], listName[random.Next(0, 13)], listName[random.Next(0, 13)], listName[random.Next(0, 13)], listName[random.Next(0, 13)], listName[random.Next(0, 13)], listName[random.Next(0, 13)], listName[random.Next(0, 13)], listName[random.Next(0, 13)], listName[random.Next(0, 13)]};
+                        List<String> RandomLastName = new List<String>() { listLastname[random.Next(0, 13)], listLastname[random.Next(0, 13)], listLastname[random.Next(0, 13)], listLastname[random.Next(0, 13)], listLastname[random.Next(0, 13)], listLastname[random.Next(0, 13)], listLastname[random.Next(0, 13)], listLastname[random.Next(0, 13)], listLastname[random.Next(0, 13)] , listLastname[random.Next(0, 13)] };
                        
                         objcompañia.Recorrer(RandomName,RandomLastName);
                         

@@ -14,7 +14,7 @@ namespace Laboratorio_6
     {
         private string companyName;
         private string companyRut;
-        private List<Division> listDivision = new List<Division> { new Division(), new Area(), new Departamento(), new Seccion(), new Bloque() };
+        private List<Division> listDivision = new List<Division> { new Division(), new Area(), new Departamento(), new Seccion(), new Bloque(), new Bloque() };
 
 
         public void setCompany(string companyName, string companyRut)
@@ -41,10 +41,23 @@ namespace Laboratorio_6
             }
             Bloque bloque = new Bloque();
             string rut1 = Convert.ToString(random.Next(16234678, 26000000)) + "-" + Convert.ToString(random.Next(0, 10));
+            List<String> listrut = new List<String>() { Convert.ToString(random.Next(16234678, 26000000)) + "-" + Convert.ToString(random.Next(0, 10)), Convert.ToString(random.Next(16234678, 26000000)) + "-" + Convert.ToString(random.Next(0, 10)) };
+            List<String> listrut1 = new List<String>() { Convert.ToString(random.Next(16234678, 26000000)) + "-" + Convert.ToString(random.Next(0, 10)), Convert.ToString(random.Next(16234678, 26000000)) + "-" + Convert.ToString(random.Next(0, 10)) };
             bloque.setEncargado(name[4], lastname[4], rut1);
-            bloque.setLacayo(name, lastname);
+            bloque.setLacayo(name, lastname,listrut);
             listDivision[4] = bloque;
-            
+            name.RemoveAt(5);
+            lastname.RemoveAt(5);
+            name.RemoveAt(6);
+            lastname.RemoveAt(6);
+            name.RemoveAt(1);
+            lastname.RemoveAt(1);
+            Bloque bloque1 = new Bloque();
+            string rut2 = Convert.ToString(random.Next(16234678, 26000000)) + "-" + Convert.ToString(random.Next(0, 10));
+            bloque1.setEncargado(name[5], lastname[5],rut2);
+            bloque1.setLacayo(name, lastname,listrut1);
+            listDivision[5] = bloque1;
+
         }
 
 

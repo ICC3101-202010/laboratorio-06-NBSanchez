@@ -14,7 +14,7 @@ namespace Laboratorio_6
     {
         private string idBloque = "Bloque";
         private Persona encbloque;
-        private List<Persona> lacayos = new List<Persona>() { new Persona(), new Persona() };
+        private List<Persona> lacayos = new List<Persona>() { new Persona(), new Persona()};
 
 
         public override void setEncargado(string ebname,string eblastname,string rut)
@@ -27,7 +27,7 @@ namespace Laboratorio_6
 
         public override string getEncargado()
         {
-            return ("Nombre Encargado Bloque: " + encbloque.GetPersonal() + Environment.NewLine + Environment.NewLine + "Lacayos: " + Environment.NewLine + Environment.NewLine + lacayos[0].GetPersonal() + Environment.NewLine + lacayos[1].GetPersonal());
+            return ("Nombre Encargado Bloque: " + encbloque.GetPersonal() + Environment.NewLine + Environment.NewLine + "Lacayos: " + Environment.NewLine + Environment.NewLine + lacayos[0].GetPersonal() + Environment.NewLine + lacayos[1].GetPersonal() + Environment.NewLine + Environment.NewLine );
         }
         public void setId(string idBloque)
         {
@@ -37,14 +37,14 @@ namespace Laboratorio_6
         {
             return ("Id: " + idBloque);
         }
-        public void setLacayo(List<String> name, List<String> lastname)
+        public void setLacayo(List<String> name, List<String> lastname, List<String> rut)
 
         {
             Random random = new Random();
             for (int i = 0; i < lacayos.Count(); i++) 
             {
-                string rut = Convert.ToString(random.Next(7289478,21987006)) + "-" + Convert.ToString(random.Next(0, 10)); 
-                lacayos[i].SetPersonal(name[i+5], lastname[i+5], rut, "Lacayo del Bloque");
+                
+                lacayos[i].SetPersonal(name[i+5], lastname[i+5], rut[i], "Lacayo del Bloque");
             }
         }
         
